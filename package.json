@@ -1,6 +1,6 @@
 {
   "name": "peertube-theme-r159",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "PeerTube Racer159 theme",
   "engine": {
     "peertube": ">=2.2.0"
@@ -15,7 +15,9 @@
   "homepage": "https://github.com/Racer159/peertube-theme-r159",
   "author": "Racer159",
   "bugs": "https://github.com/Racer159/peertube-theme-r159/issues",
-  "staticDirs": {},
+  "staticDirs": {
+    "images": "public/images"
+  },
   "css": [
     "assets/style.css"
   ],

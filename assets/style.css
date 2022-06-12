@@ -1,6 +1,9 @@
 /* stylelint-disable custom-property-pattern */
 
+@font-face { font-family: Rubik; src: url("Rubik-VariableFont_wght.ttf"); font-display: swap; }
+
 body {
+  font-family: Rubik, sans-serif;
   --mainColor: #014d8a;
   --mainColorLighter: #0159a0;
   --mainColorLightest: #1e6cab;
