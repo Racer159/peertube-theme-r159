@@ -16,10 +16,10 @@ body {
   --textareaForegroundColor: #f7f7f7;
   --textareaBackgroundColor: #2e2e2e;
   --markdownTextareaBackgroundColor: #2e2e2e;
-  --greyForegroundColor: #888;
+  --greyForegroundColor: #8d8d8d;
   --greyBackgroundColor: #262626;
   --greySecondaryBackgroundColor: #363636;
-  --actionButtonColor: #888;
+  --actionButtonColor: #8d8d8d;
   --activatedActionButtonColor: #f7f7f7;
   --channelBackgroundColor: #262626;
 
@@ -53,43 +53,105 @@ body {
   background-color: #bee5eb;
 }
 
-.user-quota .progress {
-  background: #2e2e2e !important;
+.p-dropdown,
+.p-checkbox-box,
+.progress {
+  background: var(--inputBackgroundColor) !important;
+  border: none !important;
 }
 
-.user-quota .progress span {
-  color: #f7f7f7 !important;
+.p-dropdown-panel,
+.p-dropdown .p-dropdown-trigger {
+  background: var(--submenuBackgroundColor) !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item,
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item-group,
+.p-dropdown .p-dropdown-label {
+  color: var(--greyForegroundColor) !important;
+}
+
+#p-highlighted-option,
+.p-dropdown:hover .p-dropdown-label {
+  color: var(--mainForegroundColor) !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight, .p-disabled):hover,
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item-group:not(.p-highlight, .p-disabled):hover {
+  color: var(--mainForegroundColor) !important;
+  background: var(--mainHoverColor) !important;
+}
+
+.p-checkbox-box:hover {
+  background: var(--mainBackgroundHoverColor) !important;
+}
+
+.p-checkbox-box.p-highlight:hover {
+  background: var(--mainHoverColor) !important;
+}
+
+.progress span {
+  color: var(--mainForegroundColor) !important;
 }
 
 input[type="submit"][disabled] {
-  background: #262626 !important;
+  background: var(--submenuBackgroundColor) !important;
 }
 
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup {
-  background: #262626 !important;
-  color: #f7f7f7 !important;
+  background: var(--submenuBackgroundColor) !important;
+  color: var(--mainForegroundColor) !important;
 }
 
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected,
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked,
 .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
-  background: #1e6cab !important;
-  color: #f7f7f7 !important;
+  background: var(--mainColorLightest) !important;
+  color: var(--mainForegroundColor) !important;
 }
 
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-selected,
-.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-selected.ng-option-marked
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-selected.ng-option-marked,
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-marked,
 .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon:hover,
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
-  background: #013d6e !important;
-  color: #f7f7f7 !important;
+  background: var(--mainHoverColor) !important;
+  color: var(--mainForegroundColor) !important;
 }
 
 .ng-select.ng-select-opened > .ng-select-container {
-  background: #2e2e2e;
+  background: var(--textareaBackgroundColor);
 }
 
 a.focus-visible {
+  color: var(--mainForegroundColor) !important;
+}
+
+.popover {
+  background: var(--submenuBackgroundColor) !important;
+  color: var(--mainForegroundColor) !important;
+}
+
+.popover-body {
+  color: var(--mainForegroundColor) !important;
+}
+
+.all-notifications,
+.notifications-header {
+  color: var(--mainForegroundColor) !important;
+}
+
+.popover-notifications.popover .popover-body .notifications-header a,
+.popover-notifications.popover .popover-body .notifications-header button,
+my-global-icon svg {
+  color: var(--greyForegroundColor) !important;
+}
+
+.icon.icon-filter {
+  filter: invert(58%) sepia(0%) saturate(20%) hue-rotate(139deg) brightness(96%) contrast(94%);
+}
+
+::selection,
+::-webkit-selection {
   color: var(--mainForegroundColor) !important;
 }
