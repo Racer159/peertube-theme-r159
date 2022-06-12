@@ -1,9 +1,6 @@
 /* stylelint-disable custom-property-pattern */
 
-@font-face { font-family: Rubik; src: url("Rubik-VariableFont_wght.ttf"); font-display: swap; }
-
 body {
-  font-family: Rubik, sans-serif;
   --mainColor: #014d8a;
   --mainColorLighter: #0159a0;
   --mainColorLightest: #1e6cab;
@@ -54,4 +51,45 @@ body {
 
 .alert-info {
   background-color: #bee5eb;
+}
+
+.user-quota .progress {
+  background: #2e2e2e !important;
+}
+
+.user-quota .progress span {
+  color: #f7f7f7 !important;
+}
+
+input[type="submit"][disabled] {
+  background: #262626 !important;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup {
+  background: #262626 !important;
+  color: #f7f7f7 !important;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected,
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked,
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background: #1e6cab !important;
+  color: #f7f7f7 !important;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-selected,
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-selected.ng-option-marked
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-marked,
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon:hover,
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+  background: #013d6e !important;
+  color: #f7f7f7 !important;
+}
+
+.ng-select.ng-select-opened > .ng-select-container {
+  background: #2e2e2e;
+}
+
+a.focus-visible {
+  color: var(--mainForegroundColor) !important;
 }
