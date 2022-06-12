@@ -1,0 +1,56 @@
+body {
+  --mainColor: #014D8A;
+  --mainColorLighter: #0159A0;
+  --mainColorLightest: #1E6CAB;
+  --mainHoverColor: #013D6E;
+
+  --mainBackgroundColor: #1E1E1E;
+  --mainForegroundColor: #F7F7F7;
+  --menuBackgroundColor: #151515;
+
+  --mainBackgroundHoverColor: #333333;
+
+  /* Compat with PeerTube < 3.2 */
+  --submenuColor: #262626;
+
+  --submenuBackgroundColor: #262626;
+
+  --inputForegroundColor: #F7F7F7;
+  --inputBackgroundColor: #2e2e2e;
+  --inputPlaceholderColor: #F7F7F7;
+
+  --textareaForegroundColor: #F7F7F7;
+  --textareaBackgroundColor: #2e2e2e;
+  --markdownTextareaBackgroundColor: #2e2e2e;
+
+  --greyForegroundColor: #888888;
+  --greyBackgroundColor: #262626;
+  --greySecondaryBackgroundColor: #363636;
+
+  --actionButtonColor: #888888;
+  --activatedActionButtonColor: #F7F7F7;
+
+  --channelBackgroundColor: #262626;
+}
+
+.icon-logo {
+  min-width: 29px;
+  min-height: 29px;
+  background-color: #fff;
+  background-origin: content-box;
+  border-radius: 20px;
+  padding: 3px 4px 3px 8px;
+}
+
+.logged-in-block {
+  background-color: #00000052 !important;
+}
+
+.card {
+  border-color: var(--submenuBackgroundColor);
+  box-shadow: 0 0 calc((var(--elevation) * 0.225px) + 2px) rgba(0, 0, 0, calc(.11 * (2 - var(--background-luminance, 1)))), 0 calc(var(--elevation) * 0.4px) calc((var(--elevation) * 0.9px)) rgba(0, 0, 0, calc(.13 * (2 - var(--background-luminance, 1))));
+}
+
+.alert-info{
+  background-color: #bee5eb;
+}

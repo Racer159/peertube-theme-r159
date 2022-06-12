@@ -1,0 +1,21 @@
+{
+  "name": "peertube-theme-r159",
+  "version": "2.3.1",
+  "description": "PeerTube Racer159 theme",
+  "engine": {
+    "peertube": ">=2.2.0"
+  },
+  "keywords": [
+    "peertube",
+    "theme"
+  ],
+  "homepage": "https://github.com/Racer159/peertube-theme-r159",
+  "author": "Racer159",
+  "bugs": "https://github.com/Racer159/peertube-theme-r159/issues",
+  "staticDirs": {},
+  "css": [
+    "assets/style.css"
+  ],
+  "clientScripts": [],
+  "translations": {}
+}
