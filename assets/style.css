@@ -1,5 +1,6 @@
 /* stylelint-disable custom-property-pattern */
 
+/* main styles */
 body {
   --mainColor: #014d8a;
   --mainColorLighter: #0159a0;
@@ -27,6 +28,7 @@ body {
   --submenuColor: #262626;
 }
 
+/* logo fixes */
 .icon-logo {
   min-width: 29px;
   min-height: 29px;
@@ -36,10 +38,12 @@ body {
   padding: 3px 4px 3px 8px;
 }
 
+/* darker logged in block */
 .logged-in-block {
   background-color: #00000052 !important;
 }
 
+/* shadowy cards */
 .card {
   border-color: var(--submenuBackgroundColor);
   box-shadow:
@@ -49,10 +53,7 @@ body {
     rgba(0, 0, 0, calc(0.13 * (2 - var(--background-luminance, 1))));
 }
 
-.alert-info {
-  background-color: #bee5eb;
-}
-
+/* input field styles */
 .p-dropdown,
 .p-checkbox-box,
 .progress {
@@ -123,10 +124,7 @@ input[type="submit"][disabled] {
   background: var(--textareaBackgroundColor);
 }
 
-a.focus-visible {
-  color: var(--mainForegroundColor) !important;
-}
-
+/* popover styles */
 .popover {
   background: var(--submenuBackgroundColor) !important;
   color: var(--mainForegroundColor) !important;
@@ -147,11 +145,24 @@ my-global-icon svg {
   color: var(--greyForegroundColor) !important;
 }
 
-.icon.icon-filter {
-  filter: invert(58%) sepia(0%) saturate(20%) hue-rotate(139deg) brightness(96%) contrast(94%);
+/* fix publish button */
+.publish-button my-global-icon svg {
+  color: #8dcbfe !important;
 }
 
+/* fix bad contrast alert color */
+.alert-info {
+  background-color: #bee5eb;
+}
+
+/* fix foreground colors */
 ::selection,
-::-webkit-selection {
+::-webkit-selection,
+a.focus-visible {
   color: var(--mainForegroundColor) !important;
+}
+
+/* fix filter icon color */
+.icon.icon-filter {
+  filter: invert(58%) sepia(0%) saturate(20%) hue-rotate(139deg) brightness(96%) contrast(94%);
 }
