@@ -146,7 +146,11 @@ my-global-icon svg {
 }
 
 /* fix publish button */
-.publish-button my-global-icon svg {
+.publish-button my-global-icon svg,
+.create-button my-global-icon svg,
+.add-button my-global-icon svg,
+.block-button my-global-icon svg,
+.follow-button my-global-icon svg {
   color: #8dcbfe !important;
 }
 
@@ -165,4 +169,13 @@ a.focus-visible {
 /* fix filter icon color */
 .icon.icon-filter {
   filter: invert(58%) sepia(0%) saturate(20%) hue-rotate(139deg) brightness(96%) contrast(94%);
+}
+
+/* fix paginator */
+.p-paginator-next:not(.p-disabled, .p-highlight):hover,
+.p-paginator-last:not(.p-disabled, .p-highlight):hover,
+.p-paginator-first:not(.p-disabled, .p-highlight):hover,
+.p-paginator-prev:not(.p-disabled, .p-highlight):hover,
+.p-paginator-page:not(.p-highlight):hover {
+  background-color: var(--mainHoverColor) !important;
 }
