@@ -4,7 +4,8 @@
 body {
   --mainColor: #014d8a;
   --mainColorLighter: #0159a0;
-  --mainColorLightest: #1e6cab;
+  --mainColorVeryLight: #0159a0;
+  --mainColorLightest: #0159a0;
   --mainHoverColor: #013d6e;
   --mainBackgroundColor: #1e1e1e;
   --mainForegroundColor: #f7f7f7;
@@ -14,8 +15,10 @@ body {
   --inputForegroundColor: #f7f7f7;
   --inputBackgroundColor: #2e2e2e;
   --inputPlaceholderColor: #f7f7f7;
+  --inputBorderColor: #8d8d8d8d;
   --textareaForegroundColor: #f7f7f7;
   --textareaBackgroundColor: #2e2e2e;
+  --menuForegroundColor: #f7f7f7;
   --markdownTextareaBackgroundColor: #2e2e2e;
   --greyForegroundColor: #8d8d8d;
   --greyBackgroundColor: #262626;
@@ -23,6 +26,7 @@ body {
   --actionButtonColor: #8d8d8d;
   --activatedActionButtonColor: #f7f7f7;
   --channelBackgroundColor: #262626;
+  --supportButtonHeartColor: #e83e8c;
 
   /* Compat with PeerTube < 3.2 */
   --submenuColor: #262626;
@@ -178,4 +182,9 @@ a.focus-visible {
 .p-paginator-prev:not(.p-disabled, .p-highlight):hover,
 .p-paginator-page:not(.p-highlight):hover {
   background-color: var(--mainHoverColor) !important;
+}
+
+/* fix accordion */
+.accordion {
+  --bs-accordion-btn-color: var(--mainForegroundColor) !important;
 }
